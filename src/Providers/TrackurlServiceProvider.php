@@ -66,7 +66,18 @@ class TrackurlServiceProvider extends BasePluginServiceProvider
 
         $this->registerActionLogs();
 
-        // $this->registerPermissions();
+         $this->registerPermissions();
+    }
+
+
+    /**
+     * Register the permissions for the plugin.
+     */
+    protected function registerPermissions(): void
+    {
+        Permission::registerPermissions([
+            'trackurl.view' => 'trackurl::admin.permissions.view'
+        ]);
     }
 
     /**
@@ -119,6 +130,7 @@ class TrackurlServiceProvider extends BasePluginServiceProvider
                 'type' => 'dropdown',
                 'icon' => 'bi-link',
                 'route' => $this->plugin->id.'.admin.*',
+                'permission' => 'trackurl.view',
                 'items' => [
                     $this->plugin->id . '.admin.index' => trans($this->plugin->id.'::admin.links.title'),
                     $this->plugin->id . '.admin.create' => trans($this->plugin->id.'::admin.links.create'),

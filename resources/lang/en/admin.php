@@ -70,4 +70,8 @@ return [
     'support' => "Discord support",
     "serveurliste" => "Top Servers listing",
     "contribute" => "Contribute",
+
+    'permissions' => [
+        'view' => 'View and manage Trackurl',
+    ]
 ];
