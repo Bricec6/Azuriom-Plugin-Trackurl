@@ -116,6 +116,29 @@
             </div>
         </div>
     </div>
+
+    <hr>
+
+    <div class="d-flex align-items-start gap-4 flex-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yy-kjejVAyc?si=PDcpfyXoTFE5QQHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="d-flex flex-column align-items-start gap-3">
+                <i class="bi bi-graph-up-arrow fs-3"></i>
+                <div>
+                    <h2>
+                        {{ trans('trackurl::admin.advanced_section.title') }}
+                    </h2>
+                    <p class="mb-0 text-muted">
+                        {{ trans('trackurl::admin.advanced_section.description') }}
+                        <a href="https://lank.li/trackurl" target="_blank" rel="noopener noreferrer">https://lank.li/trackurl</a>
+                    </p>
+                </div>
+
+                <a href="https://lank.li/trackurl" target="_blank" rel="noopener noreferrer" class="btn btn-primary fw-bold text-uppercase">
+                   {{ trans('trackurl::admin.advanced_section.cta') }} <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+        </div>
+    </div>
 @endsection
 
 @push('scripts')

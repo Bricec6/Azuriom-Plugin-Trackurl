@@ -70,6 +70,11 @@ return [
     'support' => "Discord support",
     "serveurliste" => "Top Servers listing",
     "contribute" => "Contribute",
+    'advanced_section' => [
+        'title' => 'Advanced statistics',
+        'description' => 'Link, QR code, link page, real-time analysis, interactive world, link comparison with Lank.li',
+        'cta' => 'Learn more about Lank.li',
+    ],
 
     'permissions' => [
         'view' => 'View and manage Trackurl',
